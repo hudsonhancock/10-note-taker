@@ -6,7 +6,7 @@ const fs = require("fs");
 
 const PORT = process.env.PORT || 3001;
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "Public")));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
