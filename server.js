@@ -12,15 +12,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/Public/index.html");
 });
 
 app.get("/notes", (req, res) => {
-  res.sendFile(__dirname + "/notes.html");
+  res.sendFile(__dirname + "/Public/notes.html");
 });
 
 app.get("/api/notes", (req, res) => {
-  res.sendFile(__dirname + "/public/db/db.json");
+  res.sendFile(__dirname + "/Public/db/db.json");
 });
 
 const noteArr = db;
